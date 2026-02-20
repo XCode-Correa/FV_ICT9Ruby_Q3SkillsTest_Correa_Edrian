@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Skills Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-image: url('https://wallpapers.com/images/hd/night-street-qf632j00dgl2xvkv.jpg');
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgb(34, 34, 34);
+        }
+        img{
+            height: 60px;
+            width: 60px;
+        }
+        .custom-gradient{
+            background-image: linear-gradient(to right, #000000, #00323b);
+        }
+        .fs-7{
+            font-size: 25px;
+        }
+        .fs-8{
+            font-size: 12px;
+        }
+        .fs-9{
+            font-size: 15px;
+        }
+        .pt-6 {
+            padding-top: 65px;
+        }
+        #instruct{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark shadow custom-gradient">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="Fair Fares logo.png" alt="Logo" class=""></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mynavbar">
+
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Fare Matrix</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Help</a>
+                </li>
+            </ul>
+
+            <a class="nav-link text-light text-decoration-underline mx-4" href="#">Book Now</a>
+
+            <form class="d-flex">
+                <button class="btn btn-dark" type="button">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div style="width: 600px; background-color: rgba(255, 255, 255, 0.667);" class="container p-3 text-dark rounded">
+    <div class="row p-1">
+        <div class="col">
+            
+        </div>
+
+        <div class="col">
+            <center>
+                <p style="font-family: 'Courier New'" class="fw-bold fs-1">Registration</p>
+            </center>
+            
+            <details class="ontoggle">
+                <summary class="text-decoration-underline">Instructions</summary>
+                <p id="instruct"></p>
+            </details>
+
+            <br>
+
+            <label class="form-label fs-9 fw-bold" for="firstname">First name</label>
+		    <input type="text" class="form-control form-control-sm" name="firstname" placeholder="" required>
+
+            <br>
+
+            <label class="form-label fs-9 fw-bold" for="lastname">Last name</label>
+		    <input type="text" class="form-control form-control-sm" name="lastname" placeholder="" required>
+
+            <br>
+
+            <div class="row">
+                <div class="col-4">
+                    <label class="form-label fs-9 fw-bold" for="age">Age</label>
+		            <br>
+                    <input type="number" name="age" class="form-control form-control-sm" placeholder="" required>
+                </div>
+                <div class="col-8">
+                    <label class="form-label fs-9 fw-bold" for="contact">Contact Number</label>
+		            <br>
+                    <input type="number" name="contact" class="form-control form-control-sm" placeholder="" required>
+                </div>
+            </div>
+
+            <br>
+
+            <label class="form-label fs-9 fw-bold" for="email">Email Address</label>
+		    <br>
+            <input type="email" name="email" class="form-control form-control-sm" placeholder="" required>
+
+            <br>
+
+            <label class="form-label fs-9 fw-bold" for="username">Enter your username</label>
+		    <input type="text" class="form-control form-control-sm" name="username" placeholder="" required>
+            
+            <br>
+
+            <label class="form-label fs-9 fw-bold" for="password">Enter your password</label>
+		    <input type="password" class="form-control form-control-sm" name="password" placeholder="" required>
+            
+            <br>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="confirm" required>
+                <label class="form-label fs-9 fw-bold" for="confirm">I accept the <a class="form-link text-decoration-underline">Terms of Use and Privacy Policy</a>.</label>
+            </div>
+
+            <br>
+
+            <center>
+                <img src="Fair Fares logo.png" alt="Logo" class="rounded-circle">
+            </center>
+
+            <br>
+
+            <center>
+                <button style="width: 200px;" type="submit" id="submit" name="submit" class="btn btn-dark" onclick="submit()">Create my account</button>
+            </center>
+
+            <br>
+            
+            <center>
+                <a href="index.html"><button style="width: 200px;" type="submit" id="submit" name="submit" class="btn btn-light">Cancel</button></a>
+            </center>
+            <br>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="container-fluid bg-dark p-1 opacity-75 text-light text-center fs-8 fw-bold">
+    © 2026 OB Montessori Website | Edrian Correa 9-Ruby
+</div>
+
+<script>
+    document.getElementById("instruct").innerHTML = "<i>Please fill out the forms below accurately and honestly. Check the information inputed, then click Submit to finish the process, or Cancel to reset the form.</i>";
+
+    function submit(){
+        alert("Account successfully created")
+    }
+
+</script>
+</body>
+</html>
