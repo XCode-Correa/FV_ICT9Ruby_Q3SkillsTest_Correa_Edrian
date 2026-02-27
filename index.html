@@ -76,8 +76,18 @@
 
 <div style="width: 600px; background-color: rgba(255, 255, 255, 0.667);" class="container p-3 text-dark rounded">
     <div class="row p-1">
-        <div class="col">
+        <div style="align-content: center;" class="col">
+            <center>
+                <img style="width: 130px; height: auto;" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" alt="Profile" class="rounded-circle">
+            </center>
+
+            <br>
+
+            <input type="file" class="form-control form-control-sm" name="" placeholder="" required>
             
+            <center>
+                <button style="width: 245px;" type="submit" id="submit" name="submit" class="btn btn-dark my-2" onclick="upload()">Upload Photo</button>
+            </center>
         </div>
 
         <div class="col">
@@ -86,7 +96,7 @@
             </center>
             
             <details class="ontoggle">
-                <summary class="text-decoration-underline">Instructions</summary>
+                <summary class="text-primary text-decoration-underline">Instructions</summary>
                 <p id="instruct"></p>
             </details>
 
@@ -171,6 +181,9 @@
 
     function submit(){
         alert("Account successfully created")
+    }
+    function upload(){
+        alert("Profile picture has been uploaded")
     }
 
 </script>
